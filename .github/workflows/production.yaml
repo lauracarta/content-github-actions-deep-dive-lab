@@ -8,14 +8,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      BUCKET_NAME: 
+    env: 
+      BUCKET_NAME: cfst-3457-f41211a0f566ff0153c7f08ab8d8-prodbucket-a8unwnyb392m
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Configure AWS cli
         uses: aws-actions/configure-aws-credentials@v1
-        with: cfst-3457-f41211a0f566ff0153c7f08ab8d8-prodbucket-a8unwnyb392m
+        with: 
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
